@@ -8,7 +8,7 @@ const movieRouter = require('./routes/movie-routes');
 const bookingRouter = require('./routes/booking-routes');
 dotenv.config();
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 
 const cors = require('cors');
 app.use(cors());
